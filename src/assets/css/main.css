@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Muli|Orbitron|Oswald&display=swap");
+html, body {
+  font-family: "Muli", sans-serif; }
+
+.navigation {
+  background-color: #222222 !important; }
+  .navigation a {
+    font-weight: 400; }
+    .navigation a:hover {
+      color: #74A69A !important; }
+
+.uk-logo {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: lighter; }
+
+header {
+  width: 100%;
+  height: 35vh; }
+
+.profile {
+  text-align: center; }
+  .profile img {
+    border: 6px solid #ffffff;
+    border-radius: 100%;
+    height: 170px;
+    width: 170px;
+    margin-top: -80px; }
+  .profile-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    margin-top: 10px; }
+  .profile-subtitle {
+    font-size: 14px;
+    margin-top: 15px;
+    text-transform: uppercase; }
+  .profile-summary {
+    width: 40%;
+    margin: 0 auto; }
+
+.social-icons {
+  margin: 0 0 10px 0; }
+  .social-icons a {
+    padding: 0 10px; }
+    .social-icons a:hover {
+      color: #74A69A; }
+
+.section-title {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 30px; }
+
+.page-heading {
+  text-align: center;
+  padding-top: 5rem; }
+  .page-heading h1 {
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    color: rgba(255, 255, 255, 0.5); }
+  .page-heading h3 {
+    font-size: 16px;
+    color: #74A69A;
+    margin-top: 0;
+    text-transform: uppercase; }
+
+/*.about {
+  margin: -50px auto 3rem auto;
+  text-align: center;
+  border: 10px solid #ffffff;
+  width: 45%;
+}*/
+footer {
+  background-color: #222222;
+  padding: 2.5rem 0;
+  color: #74A69A;
+  text-align: center;
+  margin-top: 2rem; }
+
+@media (min-width: 800px) {
+  .uk-navbar-toggle {
+    display: none; }
+  .mobile-nav {
+    display: none; } }
+
+@media (max-width: 800px) {
+  .uk-navbar-toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 2rem; }
+  .uk-navbar-right {
+    display: none; }
+  .profile {
+    text-align: center; }
+    .profile img {
+      border: 8px solid #ffffff;
+      border-radius: 100%;
+      height: 150px;
+      width: 150px;
+      margin-top: -70px; }
+    .profile-summary {
+      width: 80%;
+      margin: 0 auto; } }
+
+.project {
+  width: 750px;
+  max-width: 80%;
+  margin: -100px auto 0 auto; }
+  .project img {
+    width: 100%; }
