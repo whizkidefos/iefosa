@@ -22,28 +22,32 @@
           <h3 class="contact-info-subtitle">Ring me up (WhatsApp/Telegram)</h3>
           <p class="contact-info-address">
             me@iefosa.me <br>
+            +44 7388 165778 <br>
             +39 348 627 3489 <br>
             Mon - Fri: 9am - 6pm <br>
           </p>
         </aside>
       </div>
       <div class="uk-width-1-2@m uk-flex-first">
-        <form>
+        <form (ngSubmit)="onSubmit(form)" #form="ngForm" action="https://formspree.io/xqkaovky" method="POST">
           <fieldset class="uk-fieldset">
 
             <p class="uk-small">
               You need more information or just want to chat about a product or an idea? Fill out the form below or use any of the contact info present on this page to get in touch.
             </p>
 
+            <input type="hidden" name="_subject" value="Efosa's Contact Form">
+
             <div class="uk-margin">
-              <input class="uk-input" type="text" placeholder="Full Name" required>
+              <input ngModel #name="ngModel" name="name" class="uk-input" type="text" placeholder="Full Name" id="name" required>
             </div>
             <div class="uk-margin">
-              <input class="uk-input" type="email" placeholder="Email" required>
+              <input ngModel #email="ngModel" name="_replyto" class="uk-input" type="email" pattern="^[a-zA-Z0-9.+-]+@[a-zA-Z0-9]+.[a-zA-Z0-9-.]+$" placeholder="Email" id="email"
+                required>
             </div>
 
             <div class="uk-margin">
-              <select class="uk-select">
+              <select ngModel #subject="ngModel" name="subject" class="uk-select" id="subject" required>
                 <option>I need more info</option>
                 <option>I need a quote</option>
                 <option>Just want to chat</option>
@@ -51,11 +55,12 @@
             </div>
 
             <div class="uk-margin">
-              <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+              <textarea ngModel #message="ngModel" name="message" class="uk-textarea" rows="5"
+                placeholder="Enter your message details here..." id="message" required></textarea>
             </div>
 
             <div class="uk-margin">
-              <input class="uk-button uk-button-secondary" type="button" value="Submit">
+              <button [disabled]="form.invalid" type="submit" class="uk-button uk-button-secondary">Submit</button>
             </div>
 
           </fieldset>
