@@ -8,18 +8,18 @@ type Props = {}
 
 export default function Hero({}: Props) {
     const [text, count] = useTypewriter({
-        words: ['<Designer />', '<Thinker />', '<Coder />'],
+        words: ['<UX Designer />', '<Thinker />', '<Coder />'],
         loop: true,
         delaySpeed: 2000
     });
   return (
-    <section className='flex flex-col items-center justify-center h-screen space-y-8 overflow-hidden text-center snap-center' id='hero'>
+    <section className='flex flex-col items-center justify-center h-screen space-y-8 overflow-hidden text-center snap-start' id='hero'>
       <BackgroundCircle />
       {/* <Image src='/images/efosa_igbinehi.jpg' width='128px' height='128px' objectFit='contain' className='rounded-full' /> */}
       <img src="images/efosa_igbinehi.jpg" alt="Efosa" className='relative object-cover w-32 h-32 mx-auto rounded-full' />
         <div className='z-20'>
           <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>Software Engineer</h2>
-          <h1 className='px-10 text-5xl font-semibold lg:text-6xl'>
+          <h1 className='px-10 text-5xl font-semibold lg:text-6xl main-title'>
             <span>I'm Efosa: </span>
             <span>{text}</span>
             <Cursor cursorColor='#74a69a' />

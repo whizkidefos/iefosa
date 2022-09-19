@@ -6,7 +6,7 @@ type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <header className='sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-50 xl:items-center p-5'>
+    <header className='sticky top-0 z-50 flex items-start justify-between p-5 mx-auto max-w-7xl xl:items-center'>
         <motion.div
         initial={{
             x: -500,
@@ -27,21 +27,21 @@ export default function Header({}: Props) {
                 fgColor='grey'
                 bgColor='transparent'
                 target='_blank'
-                className='border rounded-full mr-2'
+                className='mr-2 border rounded-full'
             />
             <SocialIcon 
                 url='https://instagram.com/whizkidefos'
                 fgColor='grey'
                 bgColor='transparent'
                 target='_blank'
-                className='border rounded-full mr-2'
+                className='mr-2 border rounded-full'
             />
             <SocialIcon 
                 url='https://github.com/whizkidefos'
                 fgColor='grey'
                 bgColor='transparent'
                 target='_blank'
-                className='border rounded-full mr-2'
+                className='mr-2 border rounded-full'
             />
         </motion.div>
 
@@ -65,9 +65,9 @@ export default function Header({}: Props) {
                 network='email'
                 fgColor='grey'
                 bgColor='transparent'
-                className='border rounded-full cursor-pointer mr-1'
+                className='mr-2 border rounded-full cursor-pointer'
             />
-            <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get In Touch</p>
+            <p className='hidden text-sm text-gray-400 uppercase md:inline-flex'>Get In Touch</p>
         </motion.aside>
     </header>
   )

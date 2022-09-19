@@ -2,8 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+.libreBaskerville {
+    font-family: 'Libre Baskerville', serif;
+}
+
+@layer {
+    body {
+        @apply bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory z-0;
+    }
+
+    .main-title {
+        @apply libreBaskerville;
+    }
+}
+
 @layer components {
     .heroButton {
-        @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#74a69a]/40 hover:text-[#74a69a]/40
+        @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#74a69a]/40 hover:text-[#74a69a]/40;
     }
 }
