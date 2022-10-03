@@ -19,7 +19,7 @@ export default function Hero({}: Props) {
       <img src="images/efosa_igbinehi.jpg" alt="Efosa" className='relative object-cover w-32 h-32 mx-auto rounded-full' />
         <div className='z-20'>
           <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>Software Engineer</h2>
-          <h1 className='px-10 text-5xl font-semibold lg:text-6xl main-title'>
+          <h1 className='px-10 text-3xl font-normal lg:text-5xl main-title'>
             <span>I'm Efosa: </span>
             <span>{text}</span>
             <Cursor cursorColor='#74a69a' />
